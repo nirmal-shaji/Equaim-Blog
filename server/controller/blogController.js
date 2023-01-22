@@ -6,7 +6,7 @@ const blogModel = require('../model/blogModel');
 
 module.exports = {
     createBlog: async (req, res) => {
-        console.log("reaching herer")
+        
         const { imageUrl, paragraph, heading } = req.body;
         try {
             if (paragraph && heading) {
