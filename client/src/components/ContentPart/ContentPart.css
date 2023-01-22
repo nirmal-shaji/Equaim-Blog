@@ -1,0 +1,91 @@
+.parent {
+    display: flex;
+}
+
+.section-one {
+    width: 100px;
+
+    padding: 10px;
+
+
+}
+
+.section-two {
+    width: 100%;
+    height: 575px;
+
+    padding: 0 5%;
+    padding-top: 40px;
+
+}
+
+.section-two>.box {
+    width: 100%;
+    background-color:#E9E9E9;
+    padding: 10px;
+}
+
+.section-two>.box>.top {
+    background-color:  #D9D9D9; 
+    padding-left: 100px;
+}
+
+.section-two>.box>.top>.icons {
+    display: flex;
+}
+.section-two>.box>.top .icon{
+    padding: 0 10px 10px;
+}
+
+.section-one>.box {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color:#E9E9E9;
+    color: rgb(9, 9, 9);
+    margin: 15px 0;
+    border-radius: 10px;
+    
+}
+
+.section-two>.box>.content{
+    padding: 10px;
+}
+
+.section-two>.box>.content input{
+    width: 100%;
+   background-color: #E9E9E9;
+   border: none;
+   outline: none;
+}
+
+.section-two>.box>.content textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    max-height: calc(100vh - 320px);
+    margin-top: 15px;
+   background-color: #E9E9E9;
+}
+/* .preview-image{
+    width: 50px;
+    height: 50px;
+} */
+.preview-image{
+    position: relative;   
+ }
+ .preview-image>svg{
+     position: absolute;
+     right: 1rem;
+     top:0.5rem;
+     cursor:pointer;
+ }
+ .preview-image>img{
+  width: 50%;
+  max-height: 100%;   
+  object-fit: cover;
+  border-radius: 0.5rem;
+ }
