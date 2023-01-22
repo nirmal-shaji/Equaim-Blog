@@ -28,7 +28,8 @@ const Cards = () => {
   return (
     <div className="container">
       <div className="row">
-        {blog.map((card)=>{
+        
+        {blog?.map((card)=>{
           return(    <div className='col-md-4 my-5'>
             <div className='cards'>
               <div className='mt-1'>{card.heading}</div>
@@ -36,7 +37,11 @@ const Cards = () => {
             </div>
         </div>)
         })}
-  
+        {!blog[0] && 
+          < div className='mt-5'>
+          No new blogs
+          </div>
+        }
      
      
       </div>
